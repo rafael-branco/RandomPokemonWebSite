@@ -1,6 +1,7 @@
 import requests
 import json
 import os
+import time
 
 if not os.path.exists("JSON/allPokemons.json"):
     response = json.loads(requests.get("https://pokeapi.co/api/v2/pokemon?limit=2000").text)
@@ -31,6 +32,8 @@ for p in pokemons:
             print(folder+" file created!")
     else:
         print(folder + " file already exists!")
+    
+    time.sleep(5)
 
 
 
