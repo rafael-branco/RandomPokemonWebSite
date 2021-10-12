@@ -30,10 +30,11 @@ for p in pokemons:
         with open("JSON/Pokemons/"+ folder +".json", 'w') as fp:
             json.dump(rsp, fp)
             print(folder+" file created!")
+            time.sleep(5)
     else:
         print(folder + " file already exists!")
     
-    time.sleep(5)
+
 
 
 
