@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../Fonts/BebasNeue-Regular.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'Alfa Slab One';
+    src: url('../Fonts/AlfaSlabOne-Regular.ttf'); /* IE9 Compat Modes */
+}
+
+body{
+    margin: 0;
+    
+}
+
+
+
+header{
+    background-color: red;
+    color: white;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+}
+
+header h1{
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 50px;
+}
