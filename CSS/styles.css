@@ -23,6 +23,9 @@ header{
     color: white;
     font-family: 'Bebas Neue';
     font-weight: bold;
+    height: 85px;
+    box-shadow: 10px 5px 13px grey;
+    border-bottom: solid 1px rgb(139, 0, 0);
 }
 
 header h1{
@@ -40,6 +43,7 @@ header h1{
     margin: 75px auto;
     background-color: rgb(221, 221, 221);
     border: solid 2px rgb(170, 170, 170);
+    box-shadow: 4px 6px 14px grey;
 }
 
 .img-container{
@@ -62,7 +66,7 @@ header h1{
     height: 50px;
     margin: auto;
     text-align: center;
-    line-height: 2;
+    line-height: 2.2;
 }
 
 .types{
