@@ -1,18 +1,17 @@
 import json
 import mysql.connector
 from time import sleep
+from flask import Flask, render_template, request, jsonify
 
-def main():
-    print("ABC")
-    '''
-    mysql_file = open('JSON/mysql.json',)
-    mysql_data = json.load(mysql_file)
+app = Flask(__name__)
 
-    mydb = mysql.connector.connect(user=mysql_data['mysql_info'][0]['user'],
-                                password=mysql_data['mysql_info'][0]['password'],
-                                host=mysql_data['mysql_info'][0]['host'],
-                                database=mysql_data['mysql_info'][0]['database'])
-    db_cursor = mydb.cursor()
-    '''
-    
+@app.route('/')
+def index():
+    return render_template("index.html")
 
+@app.route('/getRandomPokemon.py', methods=['POST'])
+def process():
+    return jsonify({'teste': 'meu teste deu certo :D'})
+ 
+if __name__ == '__main__':
+    app.run(debug=True)
