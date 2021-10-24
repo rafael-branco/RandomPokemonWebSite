@@ -9,7 +9,7 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route('/getRandomPokemon.py', methods=['POST'])
+@app.route('/getRandomPokemon', methods=['POST'])
 def process():
     return jsonify({'teste': 'meu teste deu certo :D'})
  
