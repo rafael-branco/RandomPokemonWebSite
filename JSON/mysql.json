@@ -1,0 +1,10 @@
+{
+  "mysql_info": [
+    {
+      "host": "167.99.229.197",
+      "user": "rafael",
+      "password": "23061998",
+      "database": "pokebase"
+    }
+  ]
+}
