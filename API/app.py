@@ -10,16 +10,6 @@ def home_page():
     json_dump = json.dumps(data_set)
     return json_dump
 
-    
-@app.route('/user/', methods=['GET'])
-def request_page():
-
-    user_query = str(request.args.get('user')) 
-
-    data_set = {'Page': 'Request', 'Message': f'Hello, {user_query}! :D'}
-    json_dump = json.dumps(data_set)
-    return json_dump
-
 if __name__=="__main__":
     app.run(host=os.getenv('IP', '0.0.0.0'), 
             port=int(os.getenv('PORT', 4444)))
